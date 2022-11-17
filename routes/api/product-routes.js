@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
       }
     ]
   })
-    .then(dbItemData => res.json(dbItemData))
+    .then(dbProduct => res.json(dbProduct))
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
@@ -47,14 +47,14 @@ router.get('/:id', (req, res) => {
       }
     ]
   })
-    .then(dbItemData => res.json(dbItemData))
+    .then(dbProduct => res.json(dbProduct))
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
     });  
 });
 
-// create new product
+// create new product                          << DEMO >>
 router.post('/', (req, res) => {
   /* req.body should look like this...
     {
@@ -113,7 +113,7 @@ router.put('/:id', (req, res) => {
       // figure out which ones to remove
       const productTagsToRemove = productTags
         .filter(({ tag_id }) => !req.body.tagIds.includes(tag_id))
-        .map(({ id }) => id);
+        // [bg]    .map(({ id }) => id);
 
       // run both actions
       return Promise.all([
@@ -128,8 +128,28 @@ router.put('/:id', (req, res) => {
     });
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', (req, res) => {   //                       << DONE >>
   // delete one product by its `id` value
+  
+//
+  Product.destroy({
+    where: {
+      id: req.params.id,
+    },
+  })
+    .then((dbProduct) => {
+      if (!dbProduct) {
+        res.status(404).json({ message: "No product found with this id!" });
+        return;
+      }
+      res.json(dbProduct);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+//
+
 });
 
 module.exports = router;
