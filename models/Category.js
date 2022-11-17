@@ -17,14 +17,13 @@ Category.init(
       type: DataTypes.STRING,
       allowNull: false
     }
-
-    category_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'product',
-        key: 'id'
-      }
-    }
+    // category_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: 'product',
+    //     key: 'id'
+    //   }
+    // }
   },
   {
     sequelize,
