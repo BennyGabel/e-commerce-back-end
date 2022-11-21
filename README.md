@@ -25,7 +25,7 @@
 ## Usage
 npm start
 
-![](/assets/screenshot/All_Routes.jpg?raw=true)
+![](/assets/screenshots/All_Routes.jpg?raw=true)
 
 ## Credits
 
