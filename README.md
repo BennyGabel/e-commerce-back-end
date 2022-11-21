@@ -1,4 +1,4 @@
-# readme-generator
+# e-commerce-back-end
 
 ## Description
   Object-Relational Mapping (ORM)
