@@ -12,8 +12,10 @@
 - [Credits](#credits)
 - [Email](#email)
 - [Github](#github)
+- [Video](#Walk-through-Video)
 - [Notes](#notes)
 - [License](#license)
+
 
 ## Installation
 1. Pre-requisits: Download Node JS. 
@@ -44,6 +46,9 @@ bennygabel@gmail.com
 Github Repository:  (https://github.com/BennyGabel/e-commerce-back-end)
 
 Project URL: **This project is just back-end; it is not deployed**
+
+## Video
+(https://www.youtube.com/watch?v=EbpqTqmYz7E)
 
 ## Notes: 
 (Used Insomnia to test/display the routes)
