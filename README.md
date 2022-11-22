@@ -7,6 +7,7 @@
   
 ## Table of Contents
 - [Installation](#installation)
+- [Data](#data)
 - [Usage](#usage)
 - [Credits](#credits)
 - [Email](#email)
@@ -22,23 +23,27 @@
    * mysql2
    * sequelize
 
+## Data
+1. Login into MySql
+   * db/schema.sql       Creates databas
+   * quit                Exit MySql
+2. npm run seed          Fill in Test/information
+
 ## Usage
 npm start
 
 ![](/assets/screenshots/All_Routes.jpg?raw=true)
 
 ## Credits
-
 Author: Benny Gabel
 
 ## Email: 
 bennygabel@gmail.com
 
 ## Github
-
 Github Repository:  (https://github.com/BennyGabel/e-commerce-back-end)
 
-Project URL: This project is just back-end; it is not deployed
+Project URL: **This project is just back-end; it is not deployed**
 
 ## Notes: 
 (Used Insomnia to test/display the routes)
